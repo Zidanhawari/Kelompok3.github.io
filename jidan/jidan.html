@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pepsi Inspired Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+<!-- Navbar -->
+<header class="sticky top-0 bg-black z-50 shadow-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <!-- Logo kiri -->
+    <a href="#" class="flex items-center">
+      <img src="c:\Users\PC-31 LAB 1\Documents\jidan\pepsi logo.png" alt="Pepsi Logo" class="h-10 w-auto object-contain" />
+    </a>
+
+    <!-- Menu kanan -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#" class="hover:text-blue-400 transition">Home</a>
+      <a href="https://www.pepsi.com/products" class="hover:text-blue-400 transition">Products</a>
+      <a href="https://id.wikipedia.org/wiki/Pepsi" class="hover:text-blue-400 transition">About</a>
+      <a href="https://contact.pepsico.com/pepsi" class="hover:text-blue-400 transition">Contact</a>
+    </nav>
+
+    <!-- Mobile menu button (kanan) -->
+    <button id="menuBtn" class="md:hidden text-white focus:outline-none ml-4">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+    <a href="#" class="block py-2 hover:text-blue-400">Home</a>
+    <a href="https://www.pepsi.com/products" class="block py-2 hover:text-blue-400">Products</a>
+    <a href="https://id.wikipedia.org/wiki/Pepsi" class="block py-2 hover:text-blue-400">About</a>
+    <a href="https://contact.pepsico.com/pepsi" class="block py-2 hover:text-blue-400">Contact</a>
+  </div>
+</header>
+
+
+ <!-- Hero Section -->
+<section class="relative h-[90vh] overflow-hidden flex items-center justify-center">
+  <!-- Background video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="c:\Users\PC-31 LAB 1\Documents\jidan\All the Best Moments are Better With Pepsi.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Optional dark overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 text-center">
+    <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 text-blue-400">
+      Refresh Your World
+    </h1>
+    <p class="text-lg sm:text-xl mb-6 max-w-xl mx-auto">
+      Experience the bold, crisp taste of Pepsi. Always refreshing, always bold.
+    </p>
+    <a href="https://www.pepsi.com/auth/login" class="inline-block bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-all font-semibold shadow-lg">
+      SIGN IN
+    </a>
+  </div>
+</section>
+
+<!-- Video Ad Section -->
+<section class="bg-black py-16 px-6 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold text-blue-400 mb-6">Watch Our Latest Ad</h2>
+  <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+    Experience the energy and excitement of Pepsi's latest commercial.
+  </p>
+
+  <div class="relative pb-[56.25%] h-0 overflow-hidden max-w-4xl mx-auto rounded-lg shadow-lg">
+    <iframe class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/Bghi0cn81Io?si=IvkIOMMcQ54S-fto"
+            title="Pepsi Ad"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Stay on the PULSE Section with Background Video (Bottom Text) -->
+<section class="relative h-[70vh] flex items-end justify-center overflow-hidden">
+
+  <!-- Background video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="c:\Users\PC-31 LAB 1\Documents\jidan\New Logo and Visual Identity Announcement _ Pepsi.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Optional dark overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
+
+  <!-- Foreground content at the bottom -->
+  <div class="relative z-20 text-center px-4 pb-12">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-2">
+      Stay on the <span class="text-white">PULSE</span>
+    </h2>
+    <p class="text-lg sm:text-xl text-gray-200 max-w-xl mx-auto">
+      Keep up with the latest vibes and refresh your spirit with Pepsi.
+    </p>
+  </div>
+
+</section>
+
+<!-- Product Section -->
+<section class="bg-black py-16 px-6">
+  <h2 class="text-3xl sm:text-4xl font-bold text-blue-400 mb-6 text-center">Our Products</h2>
+
+  <!-- Horizontal Scroll Container -->
+  <div class="overflow-x-auto whitespace-nowrap scroll-smooth px-2">
+    <div class="inline-grid grid-flow-col auto-cols-[250px] gap-6">
+      
+      <!-- Product Card 1 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-90 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\pepsiori.png.png" alt="Pepsi Can" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Original</h3>
+        <p class="text-sm text-gray-600 text-center">The classic taste.</p>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-105 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\pepsizero.jpg" alt="Pepsi Zero" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Zero Sugar</h3>
+        <p class="text-sm text-gray-600 text-center">Zero sugar, all flavor.</p>
+      </div>
+
+       <!-- Product Card 3 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-105 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\PEPSIDIET.PNG" alt="Pepsi Diet" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Diet Pepsi</h3>
+        <p class="text-sm text-gray-600 text-center">Light, crisp, and refreshing – without the calories.</p>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-105 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\pepsimango.png" alt="Pepsi Mango" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Mango</h3>
+        <p class="text-sm text-gray-600 text-center">A fruity twist that redefines refreshment.</p>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-105 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\pepsiwildcherry.png" alt="Pepsi Wild Cherry" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Wild Cherry</h3>
+        <p class="text-sm text-gray-600 text-center">Bold cherry flavor meets iconic Pepsi taste.</p>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-105 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\nitrovanilla.png" alt="Pepsi Nitro" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Nitro</h3>
+        <p class="text-sm text-gray-600 text-center">Smooth & creamy cola with nitrogen infusion.</p>
+      </div>
+
+       <!-- Product Card 7 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-105 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\cola.ong.png" alt="Pepsi Lime" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Cola</h3>
+        <p class="text-sm text-gray-600 text-center">CARBONATED WATER,SUGAR,NATURAL FLAVOR
+</p>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="bg-white text-black rounded-lg p-4 shadow-md hover:scale-90 transition-transform">
+        <img src="c:\Users\PC-31 LAB 1\Documents\jidan\vanilla.png" alt="Pepsi Vanilla" class="w-full h-40 object-contain mb-4">
+        <h3 class="text-lg font-bold text-center">Pepsi Vanilla</h3>
+        <p class="text-sm text-gray-600 text-center">A creamy vanilla twist to classic Pepsi flavor.</p>
+      </div>
+
+      <!-- Tambah produk lain sesuai kebutuhan -->
+      
+    </div>
+  </div>
+  <!-- More Products Box -->
+<div class="mt-10 flex justify-center">
+  <div class="bg-blue-600 text-white px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-all cursor-pointer">
+   <a href="https://www.pepsi.com/products">MORE PRODUCTS</a>
+  </div>
+</div>
+
+    </a>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 text-center py-6">
+    <p>&copy; 2025 Pepsi Inspired Design. All rights reserved.</p>
+  </footer>
+
+  <script src="c:\Users\zidan\OneDrive\Dokumen\jidan\script.js"></script>
+</body>
+</html>
